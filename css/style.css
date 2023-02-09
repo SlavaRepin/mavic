@@ -1027,6 +1027,10 @@ body._lock {
   padding-bottom: 1.4375rem;
 }
 
+.mavic__bottom-link {
+  bottom: 30px;
+}
+
 .body-mavic {
   position: relative;
   display: -webkit-box;
@@ -1094,7 +1098,7 @@ body._lock {
   padding: 0 0 16% 0;
   -webkit-transform: translate(0, 50%) rotateX(-45deg);
           transform: translate(0, 50%) rotateX(-45deg);
-  opacity: 0;
+  opacity: 0.01;
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -1120,10 +1124,6 @@ body._lock {
   line-height: 1.5;
   max-width: 20.25rem;
   text-align: center;
-}
-
-.body-mavic__bottom-link {
-  bottom: 30px;
 }
 
 .buttons {
@@ -2436,6 +2436,12 @@ body._lock {
 			);
   }
 
+  .mavic__bottom-link {
+    bottom: calc(
+				10px + 20 * ((100vw - 320px) / (1238 - 320))
+			);
+  }
+
   .body-mavic__content-title {
     font-size: calc(
 				36px + 60 * ((100vw - 320px) / (1238 - 320))
@@ -2445,12 +2451,6 @@ body._lock {
   .body-mavic__content-subtitle {
     font-size: calc(
 				17px + 0 * ((100vw - 320px) / (1238 - 320))
-			);
-  }
-
-  .body-mavic__bottom-link {
-    bottom: calc(
-				10px + 20 * ((100vw - 320px) / (1238 - 320))
 			);
   }
 
